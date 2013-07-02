@@ -24,7 +24,7 @@
 	rendered webpage. Do not duplicate the title within the text of your page.
  -->
 
-<title>[NewProjectName]</title>
+<title>Common Build Infrastructure</title>
 </head>
 
 <!-- 
@@ -46,9 +46,9 @@ margin-bottom:5px;
 </style>
 
 <body>
-<p>The [NewProjectName] project is a proposed open source project under the <a
-	href="http://www.eclipse.org/projects/project_summary.php?projectid=[ContainerProjectId]">[ContainerProjectName]
-Container Project</a>.</p>
+<p>The Common Build Infrastructure (CBI) project is a proposed open source project under the <a
+	href="http://www.eclipse.org/projects/project_summary.php?projectid=technology">Technology
+Project</a>.</p>
 
 <!-- 
 	The communication channel must be specified. Typically, this is the
@@ -67,6 +67,15 @@ Forum.</p>
 	Optionally provide the background that has lead you to creating this project.
  -->
 
+<p>The Eclipse Foundation hosts a large number of projects. Historically, each project has implemented their
+own build system with mixed results. Given the importance of an repeatable and maintainable build, this project
+was born. The Common Build Infrastructure aims to:</p>
+<ul>
+  <li>Make it really easy to build Eclipse projects</li>
+  <li>Make it really easy to sign jar files and other artifacts</li>
+  <li>Make it easier for new projects to set up their build</li>
+</ul>
+
 <h2>Scope</h2>
 
 <!-- 
@@ -74,6 +83,15 @@ Forum.</p>
 	is in-scope and (optionally) what is out-of-scope. An Eclipse project
 	cannot have an open-ended scope.
  -->
+
+<p>The Common Build Infrastructure (CBI) project maintains and develops the following components:</p>
+<ul>
+  <li>Jar signing service</li>
+  <li>Operating system signing service</li>
+  <li>Maven plugins used for Eclipse builds</li>
+  <li>Common Eclipse license files</li>
+</ul>
+
 
 <h2>Description</h2>
 
@@ -92,6 +110,12 @@ Forum.</p>
 	What value do you get by having your project at Eclipse over and above the value
 	of hosting at Eclipse Labs?
  -->
+
+<p>Given the Eclipse-focused background and scope, creating CBI as a project itself hosted at 
+the Eclipse Foundation is very natural. CBI makes setting up and maintaining project builds easier.
+Creating the CBI project allows people to contribute to CBI on equal footing and hopefully will
+assist in growing a community for CBI over time.</p>
+
 
 <h2>Initial Contribution</h2>
 
@@ -114,6 +138,7 @@ Forum.</p>
 	code available under some other license? Are there any LGPL/GPL bits that you
 	absolutely require?
  -->
+
  
 <h2>Committers</h2>
 
@@ -122,17 +147,24 @@ Forum.</p>
 	new project. Include affiliation, but do not include email addresses at
 	this point.
  -->
+  
 
 <p>The following individuals are proposed as initial committers to the project:</p>
 
 <dl>
-	<dt>Committer 1, Affiliation</dt>
-	<dd>Committer 1 is a committer on the *** project where he has made significant contributions over
-	many years. S/he will be contribute to the *** functionality in this new project.</dd>
-	<dt>Committer 2, Affiliation</dt>
-	<dd>Committer 2 has provided significant contributions to the existing code base. S/he will contribute
-	to the *** functionality in this new project.
-	</dd>
+	<dt>Thanh Ha, Eclipse Foundation</dt>
+	<dd>Thanh is a committer on the CBI project where he has made significant contributions over
+	the past year. He will be developing and maintaining: the signing service; the operating system
+        signing service; and Maven plugins.</dd>
+	<dt>Paul Webster, IBM</dt>
+	<dd>Paul Webster is a power user and periodic contributor to CBI. He was a sigificant contributor to the efforts to deploy CBI for
+        The Eclipse Platform project.</dd>
+	<dt>Krzysztof Daniel, Red Hat</dt>
+	<dd>Krzysztof is a power user and periodic contributor to CBI. He was a sigificant contributor to the efforts to deploy CBI for
+        The Eclipse Platform project.</dd>
+	<dt>David Williams, IBM</dt>
+	<dd>David is a power user and periodic contributor to CBI. He was a sigificant contributor to the efforts to deploy CBI for
+        The Eclipse Platform project. 
 </dl>
 
 <p>We welcome additional committers and contributions.</p>
@@ -172,8 +204,18 @@ project:</p>
 expressed interest in this project:</p>
 
 <ul>
-	<li>Somebody, Affiliation</li>
-	<li>Somebody else, Affiliation</li>
+  <li>Andrew Ross, Eclipse Foundation</li>
+  <li>Gunnar Wagenknecht, Tasktop</li>
+  <li>Lars Vogel, vogella GmbH</li>
+  <li>Alexander Kurtakov, Red Hat</li>
+  <li>Mickael Istria, JBOSS by Red Hat</li>
+  <li>Toni Menzel, Rebaze</li>
+  <li>Wim Jongman, Remain Software</li>
+  <li>Stephan Leicht Vogt, Business Systems Integration AG</li>
+  <li>Pat Huff, IBM</li>
+  <li>Jutta Bindewald, SAP</li>
+  <li>Jochen Krause, EclipseSource</li>
+  <li>Paul Lipton, CA Technologies</li>
 </ul>
 
 <h2>Project Scheduling</h2>
