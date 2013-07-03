@@ -76,6 +76,7 @@ was born. The Common Build Infrastructure aims to:</p>
   <li>Make it easier for new projects to set up their build</li>
 </ul>
 
+
 <h2>Scope</h2>
 
 <!-- 
@@ -84,14 +85,22 @@ was born. The Common Build Infrastructure aims to:</p>
 	cannot have an open-ended scope.
  -->
 
-<p>The Common Build Infrastructure (CBI) project maintains and develops the following components:</p>
+<p>The Common Build Infrastructure (CBI) project maintains and develops build
+technology common to multiple Eclipse projects.</p>
+
+<p>the following components are examples of CBI technology:</p>
 <ul>
   <li>Jar signing service</li>
   <li>Operating system signing service</li>
-  <li>Maven plugins used for Eclipse builds</li>
+  <li>Common Maven plugins used for Eclipse builds</li>
   <li>Common Eclipse license files</li>
 </ul>
 
+<p>It is important to differentiate between Common and Universal. CBI does not plan top abstract all 
+build systems or rarely needed features. If something is used by one and only one project, it is 
+unlikley to be included as part of CBI.</p>
+<p>Once multiple projects are using a given technology something, then it may be a candidate for 
+inclusion into CBI.</p>
 
 <h2>Description</h2>
 
