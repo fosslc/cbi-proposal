@@ -68,13 +68,7 @@ Forum.</p>
  -->
 
 <p>The Eclipse Foundation hosts a large number of projects. Historically, each project has implemented their
-own build system with mixed results. Given the importance of a repeatable and maintainable build, this project
-is proposed. The Common Build Infrastructure aims to:</p>
-<ul>
-  <li>Make it really easy to build Eclipse projects</li>
-  <li>Make it really easy to sign jar files and other artifacts</li>
-  <li>Make it easier for new projects to set up their build</li>
-</ul>
+own build system with mixed results.</p> 
 
 
 <h2>Scope</h2>
@@ -85,22 +79,24 @@ is proposed. The Common Build Infrastructure aims to:</p>
 	cannot have an open-ended scope.
  -->
 
-<p>The Common Build Infrastructure (CBI) project maintains and develops build
-technology common to multiple Eclipse projects.</p>
+<p>Given the importance of a repeatable and maintainable build, this project
+is proposed. The Common Build Infrastructure (CBI) project maintains and develops build
+technology common to multiple Eclipse projects in order to facilitate its goals.</p>
 
-<p>the following components are examples of CBI technology:</p>
+<h3>Goals</h3>
 <ul>
-  <li>Jar signing service</li>
-  <li>Operating system signing service</li>
-  <li>Common Maven plugins used for Eclipse builds</li>
-  <li>Common Eclipse license files</li>
+  <li>Make it really easy to build Eclipse projects</li>
+  <li>Make it really easy to sign jar files and other artifacts</li>
+  <li>Make it easier for new projects to set up their build</li>
 </ul>
 
 <p>It is important to differentiate between Common and Universal. CBI does not plan top abstract all 
 build systems or rarely needed features. If something is used by one and only one project, it is 
 unlikley to be included as part of CBI.</p>
-<p>Once multiple projects are using a given technology something, then it may be a candidate for 
-inclusion into CBI.</p>
+
+<p>Once multiple projects are using a given technology something, then it may become a candidate for 
+inclusion into CBI if doing so brings benefit to CBI and projects using it.</p>
+
 
 <h2>Description</h2>
 
@@ -109,6 +105,15 @@ inclusion into CBI.</p>
 	somebody who doesn't already know very much about your project idea or domain
 	has at least a fighting chance of understanding its purpose.
  -->
+
+<h3>Examples</h3>
+<p>The following components are examples of CBI technology:</p>
+<ul>
+  <li>Jar signing service</li>
+  <li>Operating system signing service</li>
+  <li>Common Maven plugins used for Eclipse builds</li>
+  <li>Common Eclipse license files</li>
+</ul>
  
 <h2>Why Eclipse?</h2> 
 
@@ -187,7 +192,7 @@ assist in growing a community for CBI over time.</p>
         The Eclipse Platform project.</dd>
 	<dt>Krzysztof Daniel, Red Hat</dt>
 	<dd>Krzysztof is a power user and periodic contributor to CBI. He was a significant contributor to the efforts to deploy CBI for
-        The Eclipse Platform project.</dd>
+        The Eclipse Platform project and the Fedora Linux distrubution's Eclipse build.</dd>
 	<dt>David Williams, IBM</dt>
 	<dd>David is a power user and periodic contributor to CBI. He was a significant contributor to the efforts to deploy CBI for
         The Eclipse Platform project.</dd>
