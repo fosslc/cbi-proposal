@@ -47,7 +47,7 @@ margin-bottom:5px;
 
 <body>
 <p>The Common Build Infrastructure (CBI) project is a proposed open source project under the <a
-	href="http://www.eclipse.org/projects/project_summary.php?projectid=technology">Technology
+	href="http://projects.eclipse.org/projects/technology">Technology
 Project</a>.</p>
 
 <!-- 
@@ -79,11 +79,10 @@ production technologies such as build, testing, and similar can have a positive 
 	cannot have an open-ended scope.
  -->
 
-<p>Given the importance of a repeatable and maintainable build, this project
-is proposed. The Common Build Infrastructure (CBI) project maintains and develops software
-production technology common to multiple Eclipse projects in order to facilitate its goals.</p>
+<p>The Common Build Infrastructure (CBI) project maintains and develops software
+production technology common to multiple Eclipse projects.</p>
 
-<h3>Goals</h3>
+<p>Goals:</p>
 <ul>
   <li>Make it really easy to build Eclipse projects</li>
   <li>Make it easy to automate build and testing tasks</li>
@@ -92,13 +91,20 @@ production technology common to multiple Eclipse projects in order to facilitate
   <li>Continually improve the quality of builds at Eclipse</li>
 </ul>
 
-<p>It is important to differentiate between Common and Universal. CBI does not plan top abstract all 
+<p>It is important to differentiate between common and universal. CBI does not abstract all 
 build systems or rarely needed features. If something is used by one and only one project, it is 
 unlikley to be included as part of CBI.</p>
 
 <p>Once multiple projects are using a given technology something, then it may become a candidate for 
 inclusion into CBI if doing so brings benefit to CBI and projects using it.</p>
 
+<p>The following components are examples of technology that is within the scope of CBI:</p>
+<ul>
+  <li>Jar signing service</li>
+  <li>Operating system signing service</li>
+  <li>Common Maven plugins used for Eclipse builds</li>
+  <li>Common Eclipse license files</li>
+</ul>
 
 <h2>Description</h2>
 
@@ -108,14 +114,9 @@ inclusion into CBI if doing so brings benefit to CBI and projects using it.</p>
 	has at least a fighting chance of understanding its purpose.
  -->
 
-<h3>Examples</h3>
-<p>The following components are examples of initial CBI technology:</p>
-<ul>
-  <li>Jar signing service</li>
-  <li>Operating system signing service</li>
-  <li>Common Maven plugins used for Eclipse builds</li>
-  <li>Common Eclipse license files</li>
-</ul>
+<p>The Eclipse Common Build Infrastructure (CBI) combines technologies and practices 
+for building Eclipse Software.</p>
+
  
 <h2>Why Eclipse?</h2> 
 
@@ -155,10 +156,6 @@ assist in growing a community for CBI over time.</p>
   <li><a href="git://git.eclipse.org/gitroot/cbi/org.eclipse.license.git">Git repository for the common license files</a></li>
   <li><a href="http://git.eclipse.org/c/cbi/signing-service.git/">Git repository for the signing service</a></li>
 </ul>
-
-
-<p>TODO: should we talk about our prerequisites?</p>
-
  
 <h2>Legal Issues</h2>
 
